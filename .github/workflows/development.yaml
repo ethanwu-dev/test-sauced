@@ -23,6 +23,7 @@ on:
 
 jobs:
   log-the-inputs:
+    if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
       - run: |
